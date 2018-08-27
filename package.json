@@ -1,0 +1,21 @@
+{
+  "name": "spotify-uet",
+  "version": "1.0.0",
+  "description": "Spotify music app",
+  "main": "index.js",
+  "repository": "https://github.com/inuyashaaa/spotify-uet.git",
+  "author": "Sotatek-ManhPham <manh.pham@sotatek.com>",
+  "license": "MIT",
+  "dependencies": {
+    "express": "4.16.3",
+    "pm2": "3.0.4"
+  },
+  "scripts": {
+    "start": "pm2 start index.js -i 0 --name 'spotify'",
+    "stop": "pm2 stop spotify",
+    "restart": "pm2 restart spotify",
+    "delete": "pm2 delete spotify",
+    "start:dev": "pm2-dev index.js",
+    "debug": "node --inspect index.js"
+  }
+}
