@@ -12,5 +12,10 @@ module.exports = Object.freeze({
   },
   app: {
     port: parseInt(process.env.PORT) || 3000
+  },
+  auth: {
+    clientId: process.env.CLIENT_ID || 'c82264e0d15d40bda9e1cf009ed94bac',
+    clientSecret: process.env.CLIENT_SECRET || '5719da57db234722b2b744e03b96366b',
+    redirectUrl: process.env.REDIRECT_URL || 'http://localhost:3000/callback'
   }
 })
